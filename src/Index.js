@@ -43,7 +43,7 @@ export default class App extends Component {
                           renderItem={item =>
                               <Card style={{ elevation: 4 }}>
                                   <CardItem cardBody>
-                                      <Image style={{ resizeMode: 'cover', width: null, flex: 1, height: 300 }} source={item.image} />
+                                      <Image style={{ resizeMode: 'cover', width: null, flex: 1, height: 200 }} source={item.image} />
                                   </CardItem>
                                   <CardItem>
                                     <Grid>
@@ -77,14 +77,14 @@ export default class App extends Component {
                                       </Row>
                                     </Grid>
                                   </CardItem>
-                                  {/* <CardItem>
+                                  <CardItem>
                                       <Button>
                                         <Icon name="heart" />
                                       </Button>
                                       <Button>
                                         <Icon name="close" />
                                       </Button>
-                                  </CardItem> */}
+                                  </CardItem>
                               </Card>
                           }
 
