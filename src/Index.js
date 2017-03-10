@@ -87,7 +87,6 @@ export default class App extends Component {
                                   </CardItem>
                               </Card>
                           }
-
                       />
                   </Col>
                   </Grid>
