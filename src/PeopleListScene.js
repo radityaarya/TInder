@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Image, View } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Col, Row, Grid } from "react-native-easy-grid";
-import { Header, Content, Title, Container, Icon, DeckSwiper, Card, CardItem, Left, Body, Thumbnail, Text, Right, Button} from 'native-base';
+import { Header, Content, Title, Container, DeckSwiper, Card, CardItem, Left, Body, Thumbnail, Text, Right, Button} from 'native-base';
 
 import dataSource from './db/data'
 
@@ -15,7 +16,7 @@ export default class PeopleListScene extends Component {
                           <Left>
                               <Button transparent onPress={this.props.toIndexScene}
                               title="Next">
-                                  <Icon name='arrow-back' />
+                                  <Icon name='navigate-before' size={30} color="#ffffff"/>
                               </Button>
                           </Left>
                           <Body>
@@ -27,7 +28,7 @@ export default class PeopleListScene extends Component {
                         renderItem={item =>
                           <Card style={{ elevation: 4, padding: 10 }}>
                             <CardItem cardBody>
-                              <Image style={{ resizeMode: 'cover', width: 100, flex: 1, height: 250 }} source={item.image} />
+                              <Image style={{ resizeMode: 'cover', width: null, flex: 1, height: 250 }} source={item.image} />
                           </CardItem>
                           <CardItem>
                             <Grid>
@@ -61,13 +62,13 @@ export default class PeopleListScene extends Component {
                             </Row>
                           </Grid>
                         </CardItem>
-                        <CardItem>
+                        <CardItem style={{flex: 1, justifyContent: 'space-around'}}>
                           <Button transparent>
-                            <Icon name="heart" style={{color:'#737373', fontSize: 60}} />
-                        </Button>
-                        <Button transparent>
-                          <Icon name="close" style={{color:'#737373', fontSize: 60}}  />
-                      </Button>
+                            <Icon name="close" style={{color:'#737373', fontSize: 60}}  />
+                          </Button>
+                          <Button transparent>
+                            <Icon name="favorite-border" style={{color:'#737373', fontSize: 60}} />
+                          </Button>
                     </CardItem>
                   </Card>
                 }
