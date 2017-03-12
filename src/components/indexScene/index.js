@@ -5,15 +5,15 @@ import Search from './Search';
 import GirlRecommendations from './GirlRecommendations';
 import Chat from './Chat';
 
-const PeopleListScene = () => {
+export default class PeopleListScene extends Component {
+  render(){
     return (
         <Container>
             <Header></Header>
             <Search />
-            <GirlRecommendations />
+            <GirlRecommendations toPeopleListScene={this.props.toPeopleListScene} />
             <Chat />
         </Container>
     );
+  }
 }
-
-export default PeopleListScene
