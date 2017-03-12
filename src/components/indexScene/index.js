@@ -6,6 +6,10 @@ import GirlRecommendations from './GirlRecommendations';
 import Chat from './Chat';
 
 export default class PeopleListScene extends Component {
+  constructor(){
+    super()
+  }
+
   render(){
     return (
         <Container>
