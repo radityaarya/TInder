@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import IndexScene from './IndexScene'
-import PeopleListScene from './PeopleListScene'
 import {
   AppRegistry,
   Navigator
 } from 'react-native';
+
+import IndexScene from './components/indexScene'
+import PeopleListScene from './components/peopleListScene'
 
 export default class App extends Component {
   constructor() {

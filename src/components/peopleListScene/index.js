@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Col, Row, Grid } from "react-native-easy-grid";
 import { Header, Content, Title, Container, DeckSwiper, Card, CardItem, Left, Body, Thumbnail, Text, Right, Button} from 'native-base';
 
-import dataSource from './db/data'
+import dataSource from '../../db/data'
 
 export default class PeopleListScene extends Component {
 
