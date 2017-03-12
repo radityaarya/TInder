@@ -4,34 +4,35 @@ import { Col, Row, Grid } from "react-native-easy-grid";
 import { Thumbnail } from 'native-base';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import dataSource from '../../db/data'
+import dataSources from '../../db/data'
 
 export default class GirlRecommendations extends Component {
     constructor(props){
       super(props)
-      const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-      this.state = {
-          data: ds.cloneWithRows([...dataSource]),
-      }
+      // const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+      // this.state = {
+      //     data: ds.cloneWithRows([...this.props.people]),
+      // }
     }
 
-    componentWillReceiveProps(nextProps){
-      const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-      this.setState({
-          data: ds.cloneWithRows([...dataSource]),
-      })
-    }
+    // componentWillReceiveProps(nextProps){
+    //   const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    //   this.setState({
+    //       data: ds.cloneWithRows([...this.props.people]),
+    //   })
+    // }
 
     render() {
         return (
               <View>
                   <Text style={{marginLeft : 15, marginTop : 15, fontSize: 14}}>
-                     Chat ({dataSource.length})
+                     Chat ({dataSources.length})
                   </Text>
 
-                  <ListView
-                      dataSource={this.state.data}
-                      renderRow={(data, index) =>
+                  <ScrollView>
+                    {
+                      this.props.people.map((data, index) =>{
+                        return(
                           <Grid key={index} >
 
                             <Col size={23}>
@@ -48,8 +49,10 @@ export default class GirlRecommendations extends Component {
                             </Col>
 
                           </Grid>
-                      }
-                  />
+                        )
+                      })
+                    }
+                  </ScrollView>
              </View>
         )
     }
