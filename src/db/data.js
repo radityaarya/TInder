@@ -23,6 +23,62 @@ const data = [
           image: require('../../img/ProfilePicture/pp3.jpg'),
           bio: 'Your parents will love me, but your neighbors wont'
       },
+      {
+          interest: 'Acting',
+          distance: '421 m',
+          name: 'Pevita Pearce',
+          age: '23',
+          image: require('../../img/ProfilePicture/pp4.jpg'),
+          bio: 'this is bio'
+      },
+      {
+          interest: 'Presenting',
+          distance: '234 m',
+          name: 'Marissa Anita',
+          age: '33',
+          image: require('../../img/ProfilePicture/pp5.jpg'),
+          bio: 'this is bio'
+      },
+      {
+          interest: 'Basket Ball',
+          distance: '654 m',
+          name: 'Maria Selena',
+          age: '33',
+          image: require('../../img/ProfilePicture/pp6.jpg'),
+          bio: 'this is bio'
+      },
+      {
+          interest: 'Music',
+          distance: '523 m',
+          name: 'Isyana Sarasvati',
+          age: '23',
+          image: require('../../img/ProfilePicture/pp7.png'),
+          bio: 'this is bio'
+      },
+      {
+          interest: 'Acting',
+          distance: '654 m',
+          name: 'Dian Sastro',
+          age: '34',
+          image: require('../../img/ProfilePicture/pp8.jpg'),
+          bio: 'this is bio'
+      },
+      {
+          interest: 'Modeling',
+          distance: '249 m',
+          name: 'Dominique Diyose',
+          age: '28',
+          image: require('../../img/ProfilePicture/pp9.jpg'),
+          bio: 'this is bio'
+      },
+      {
+          interest: 'Music',
+          distance: '129 m',
+          name: 'Sheryl Sheinafia',
+          age: '20',
+          image: require('../../img/ProfilePicture/pp10.jpg'),
+          bio: 'this is bio'
+      },
   ]
 
 export default data
