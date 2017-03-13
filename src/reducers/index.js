@@ -4,8 +4,7 @@ import SearchReducer from './SearchReducer'
 
 const rootReducers = combineReducers({
   people : PeopleListReducer,
-  chatSearch : SearchReducer
-
+  chatSearch : SearchReducer,
 })
 
 export default rootReducers

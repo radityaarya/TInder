@@ -29,7 +29,7 @@ export default class GirlRecommendations extends Component {
                      Chat ({dataSources.length})
                   </Text>
 
-                  <ScrollView>
+                  <ScrollView style={{height: '61.5%'}}>
                     {
                       this.props.people.map((data, index) =>{
                         return(

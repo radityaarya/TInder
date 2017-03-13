@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { TouchableHighlight, ScrollView, Text, View } from 'react-native';
-import { Thumbnail } from 'native-base';
+import { Thumbnail, Container } from 'native-base';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import dataSource from '../../db/data'
@@ -9,7 +9,7 @@ export default class GirlRecommendations extends Component {
 
   render() {
       return (
-        <View>
+        <Container style={{backgroundColor: '#ffffff'}}>
           <Text style={{marginLeft : 15, marginTop : 15, fontSize: 14}}>
             Girl recommendations ({dataSource.length})
           </Text>
@@ -27,7 +27,7 @@ export default class GirlRecommendations extends Component {
               </TouchableHighlight>
           </ScrollView>
 
-        </View>
+        </Container>
       )
   }
 }
