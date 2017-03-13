@@ -9,9 +9,14 @@ import Search from './Search';
 import GirlRecommendations from './GirlRecommendations';
 import Chat from './Chat';
 
+// import data from '../../db/data'
+
 class PeopleListScene extends Component {
   constructor(){
     super()
+    // this.state={
+    //   peopleList: data
+    // }
   }
 
   handleChatSearchChange(e){

@@ -56,12 +56,14 @@ export default class Sweeper extends Component {
                   </CardItem>
 
                   <CardItem style={{flex: 1, justifyContent: 'space-around'}}>
-                    <Button transparent>
+                    {/* <Button transparent>
                       <Icon name="close" style={{color:'#737373', fontSize: 60}}  />
-                    </Button>
-                    <Button transparent>
-                      <Icon name="favorite-border" style={{color:'#737373', fontSize: 60}} />
-                    </Button>
+                    </Button> */}
+                    {
+                      (item.love === true)
+                      ? <Button transparent><Icon name="favorite" style={{color:'#ED4A6A', fontSize: 60}} /></Button>
+                      : <Button transparent><Icon name="favorite-border" style={{color:'#737373', fontSize: 60}} /></Button>
+                    }
                   </CardItem>
               </Card>
           }

@@ -5,7 +5,8 @@ const data = [
           name: 'Chelsea Islan',
           age: '21',
           image: require('../../img/ProfilePicture/pp1.jpg'),
-          bio: 'tbh I just want to get some free food here'
+          bio: 'tbh I just want to get some free food here',
+          love: true
       },
       {
           interest: 'Modeling',
@@ -13,7 +14,8 @@ const data = [
           name: 'Raline Shah',
           age: '26',
           image: require('../../img/ProfilePicture/pp2.jpg'),
-          bio: 'damn boy u must be my GPA because i know i could do better. Im just too lazy to actually try'
+          bio: 'damn boy u must be my GPA because i know i could do better. Im just too lazy to actually try',
+          love: false
       },
       {
           interest: 'Singing',
@@ -21,7 +23,8 @@ const data = [
           name: 'Raisa Andriani',
           age: '27',
           image: require('../../img/ProfilePicture/pp3.jpg'),
-          bio: 'Your parents will love me, but your neighbors wont'
+          bio: 'Your parents will love me, but your neighbors wont',
+          love: false
       },
       {
           interest: 'Acting',
@@ -29,7 +32,8 @@ const data = [
           name: 'Pevita Pearce',
           age: '23',
           image: require('../../img/ProfilePicture/pp4.jpg'),
-          bio: 'this is bio'
+          bio: 'this is bio',
+          love: false
       },
       {
           interest: 'Presenting',
@@ -37,7 +41,8 @@ const data = [
           name: 'Marissa Anita',
           age: '33',
           image: require('../../img/ProfilePicture/pp5.jpg'),
-          bio: 'this is bio'
+          bio: 'this is bio',
+          love: false
       },
       {
           interest: 'Basket Ball',
@@ -45,7 +50,8 @@ const data = [
           name: 'Maria Selena',
           age: '33',
           image: require('../../img/ProfilePicture/pp6.jpg'),
-          bio: 'this is bio'
+          bio: 'this is bio',
+          love: true
       },
       {
           interest: 'Music',
@@ -53,7 +59,8 @@ const data = [
           name: 'Isyana Sarasvati',
           age: '23',
           image: require('../../img/ProfilePicture/pp7.png'),
-          bio: 'this is bio'
+          bio: 'this is bio',
+          love: false
       },
       {
           interest: 'Acting',
@@ -61,7 +68,8 @@ const data = [
           name: 'Dian Sastro',
           age: '34',
           image: require('../../img/ProfilePicture/pp8.jpg'),
-          bio: 'this is bio'
+          bio: 'this is bio',
+          love: false
       },
       {
           interest: 'Modeling',
@@ -69,7 +77,8 @@ const data = [
           name: 'Dominique Diyose',
           age: '28',
           image: require('../../img/ProfilePicture/pp9.jpg'),
-          bio: 'this is bio'
+          bio: 'this is bio',
+          love: false
       },
       {
           interest: 'Music',
@@ -77,7 +86,8 @@ const data = [
           name: 'Sheryl Sheinafia',
           age: '20',
           image: require('../../img/ProfilePicture/pp10.jpg'),
-          bio: 'this is bio'
+          bio: 'this is bio',
+          love: false
       },
   ]
 
