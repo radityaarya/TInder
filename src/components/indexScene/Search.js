@@ -8,7 +8,10 @@ export default class Search extends Component {
       return (
           <InputGroup>
               <Icon name="search" size={20}/>
-              <Input placeholder="Search" />
+              <Input
+                onChange={this.props.onChange}
+                placeholder="Search"
+              />
           </InputGroup>
       )
   }
